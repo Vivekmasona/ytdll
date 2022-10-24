@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from projectlounge.pw/esmBot/help.html by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 24 Oct 2022 17:32:45 GMT -->
+<head>
+    <title>esmBot Command List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="esmBot Command List">
+    <meta property="og:description" content="This is the command list for esmBot.">
+    <meta property="og:site_name" content="esmBot">
+    <meta property="og:url" content="help.html">
+    <meta property="og:type" content="object">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
+    <style>
+        .markdown-body {
+    		    box-sizing: border-box;
+    		    min-width: 200px;
+    		    max-width: 980px;
+    		    margin: 0 auto;
+    		    padding: 45px;
+    	    }
+    
+    	    @media (max-width: 767px) {
+    		    .markdown-body {
+    			    padding: 15px;
+    		    }
+    	    }
+    </style>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+    <script>
+        fetch("help.md").then(function(response) {
+            var markdownContainer = document.getElementById("markdown");
+            var loading = document.getElementById("loading");
+            if (response.status !== 200) {
+              loading.innerHTML = "Looks like there was a problem. Status Code: " + response.status;
+              return;
+            }
+            response.text().then(function(text) {
+    	  var converter = new showdown.Converter();
+    	  converter.setFlavor("github");
+              var html = converter.makeHtml(text);
+    	  markdownContainer.removeChild(loading);
+              markdownContainer.innerHTML = html;
+    	});
+          }).catch(function(err) {
+            console.error(err);
+          });
+    </script>
+</head>
+
+<body>
+    <article class="markdown-body" id="markdown">
+        <h1 id="loading">Loading...</h1>
+    </article>
+</body>
+
+
+<!-- Mirrored from projectlounge.pw/esmBot/help.html by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 24 Oct 2022 17:32:48 GMT -->
+</html>
+
