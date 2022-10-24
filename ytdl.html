@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from projectlounge.pw/ytdl by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 24 Oct 2022 17:32:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>youtube-dl Web Interface</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <meta property="og:type" content="article">
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
+  <meta property="og:title" content="youtube-dl Web Interface" />
+  <meta property="og:description" content="Simple web frontend for yt-dlp" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>youtube-dl Web Interface</h1>
+      <p>This is a simple web frontend for <a href="../external.html?link=https://github.com/yt-dlp/yt-dlp">yt-dlp</a>, a command-line based video
+        downloader application forked from <a href="../external.html?link=https://ytdl-org.github.io/youtube-dl">youtube-dl</a> that can download from <a href="../external.html?link=https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md">thousands of websites</a> including YouTube,
+        Twitter, Reddit, TikTok, and many others.</p>
+      <p>An <a href="../external.html?link=https://www.icloud.com/shortcuts/dc312040aee44f23af87d99cbc6629c4">iOS shortcut</a> is also available to access this interface at any time.</p>
+      <div id="form">
+        <div class="form-group"><input class="form-control" type="text" name="url" required="required" id="link" />
+        </div><button class="btn btn-primary btn-lg btn-block" type="button"
+          id="downloadButton">Download</button><button class="btn btn-primary btn-lg btn-block" type="button"
+          id="infoButton">Get Info/More Download Options</button>
+      </div><br />
+      <div class="lead" id="status"></div>
+      <div class="row" id="results">
+        <div class="col-md-3" id="info"></div>
+        <div class="col-md-3" id="empty"></div>
+        <ul class="col-md" id="links"></ul>
+      </div>
+    </div>
+    <span>©<script type="text/javascript">document.write( new Date().getFullYear() );</script> <a href="../external.html?link=https://essem.space/">Essem</a></span>
+  </div>
+  <script src="javascripts/ytdl.js"></script>
+</body>
+
+
+<!-- Mirrored from projectlounge.pw/ytdl by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 24 Oct 2022 17:32:45 GMT -->
+</html>
